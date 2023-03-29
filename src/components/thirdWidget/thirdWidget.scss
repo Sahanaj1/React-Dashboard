@@ -1,0 +1,54 @@
+.ThirdWidgetContainer{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    height: 400px;
+    gap:20px;
+    .LeftBox{
+      width: 58%;
+      border-radius: 8px;
+      margin-left: 10px;
+      border: 0.2px solid #D9D9D9;
+    }
+    .TitleBox{
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+    .PermitBox{
+      display: flex;
+    }
+    .TotalPermits{
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .PemritNum{
+      font-size: 24px;
+      font-weight: 500;
+      color: #CF605C;
+      margin-left: 5px;
+      align-items: center;
+      display: flex;
+    }
+    .BarchatBox{
+      height: 400px;
+    }
+    .RightBox{
+      width: 39%;
+      border-radius: 8px;
+      margin-left: 10px;
+      border: 0.2px solid #D9D9D9;
+    }
+    
+    /* media query for screens below 1024px */
+    @media (max-width: 1023px) {
+      flex-direction: column; /* stack the boxes vertically */
+      height: auto; /* remove fixed height */
+      .LeftBox, .RightBox {
+        width: 100%; /* make both boxes full width */
+        margin-left: 0; /* remove left margin */
+        margin-bottom: 20px; /* add bottom margin to create spacing */
+      }
+    }
+  }
+  

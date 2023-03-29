@@ -1,0 +1,129 @@
+  .ChartTitle{
+      font-size: 24px;
+      font-weight: 500;
+      font-family: 'Montserrat',sans-serif;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+.CircleChartBox {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    
+  
+
+    .CircleChartLabels{
+      margin-left: 350px;
+      width: 240px;
+      margin-top: 50px;
+      position: absolute;
+    }
+    .LabelSection{
+      display: flex;
+    }
+    .LabelName{
+      margin-left: 20px;
+      font-size: 12;
+      font-weight: 500;
+    }
+  }
+  .CircleChartBox canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .ChartTitle {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .CircleChartBox {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* maintain aspect ratio */
+  
+    .CircleChartLabels {
+      position: absolute;
+      top: 50%;
+      left: -30%;
+      transform: translate(0, -50%);
+      width: 100%;
+      text-align: center;
+    }
+  
+    .LabelSection {
+      display: flex;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+  
+    .LabelSection:first-child {
+      margin-left: 0;
+    }
+  
+    .LabelSection:last-child {
+      margin-right: 0;
+    }
+  
+    .LabelName {
+      font-size: 12px;
+      font-weight: 500;
+      margin-left: 5px;
+    }
+  }
+  
+  .CircleChartBox canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  /* media queries */
+  @media screen and (min-width: 768px) {
+    .CircleChartBox {
+      width: 50%;
+      padding-bottom: 50%;
+      
+    }
+    .CircleChartLabels {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(0, -50%);
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .CircleChartBox {
+      width: 50%;
+      padding-bottom: 50%;
+      
+    }
+    
+    .CircleChartLabels {
+      position: absolute;
+      top:0;
+      left: 20% !important;
+      transform: translate(0, -50%);
+      width:50% !important;
+      text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .CircleChartBox {
+      width: 40%;
+      padding-bottom: 40%;
+    }
+  }
+  

@@ -1,0 +1,96 @@
+.calendar-container {
+    position: relative;
+  }
+  
+  .calendar-toggle {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .calendar-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    padding: 16px;
+  
+    .rdrCalendarWrapper {
+      font-family: "Roboto", sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+  
+    .rdrDayPickerWrapper {
+      border: none;
+      box-shadow: none;
+      margin-bottom: 8px;
+    }
+  
+    .rdrMonthAndYearWrapper {
+      margin-bottom: 8px;
+    }
+  
+    .rdrDefinedRangesWrapper {
+      margin-bottom: 8px;
+    }
+  
+    .rdrDateDisplayWrapper {
+      margin-bottom: 8px;
+    }
+  
+    .rdrCalendarWrapper {
+      margin-bottom: 0;
+    }
+  
+    .rdrDay {
+      font-weight: 400;
+    }
+  
+    .rdrDayStartPreview,
+    .rdrDayInPreview,
+    .rdrDayEndPreview {
+      background-color: #e6e6e6;
+    }
+  
+    .rdrDayStartOfMonth,
+    .rdrDayEndOfMonth {
+      font-weight: 700;
+    }
+  
+    .rdrDayStartOfWeek,
+    .rdrDayEndOfWeek {
+      font-weight: 700;
+    }
+  
+    .rdrDayDisabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+  
+    .rdrDayToday {
+      font-weight: 700;
+    }
+  
+    .rdrDaySelected {
+      background-color: #3f51b5;
+      color: #fff;
+  
+      &:hover {
+        background-color: #3f51b5;
+      }
+    }
+  
+    .rdrCalendarWrapper,
+    .rdrDateDisplayItem {
+      border-radius: 4px;
+    }
+  }
+  

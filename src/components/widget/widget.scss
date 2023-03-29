@@ -1,0 +1,235 @@
+.widget {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    padding: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    border-radius: 10px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+  
+    .NameAndPos{
+      display: flex;
+      flex-direction: column;
+    }
+    .username{
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+      font-family: 'Montserrat',sans-serif;
+    }
+    .position{
+      font-size: 18px;
+      font-weight: 500;
+      color: black;
+      font-family: 'Montserrat',sans-serif;
+    }
+   .overCard{
+    background-color: #8575E7;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+   }
+   .NumofTimes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+  }
+   .number{
+    font-size: 34px;
+    color: #8575E7;
+    font-weight: bold;
+   }
+   .times{
+    font-size: 24px;
+    color: #8575E7;
+    font-weight: 500;
+   }
+    
+    .left,
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      .title {
+        font-weight: bold;
+        font-size: 14px;
+        color: rgb(160, 160, 160);
+      }
+  
+      .counter {
+        font-size: 28px;
+        font-weight: 300;
+      }
+  
+      .link {
+        width: max-content;
+        font-size: 12px;
+        border-bottom: 1px solid gray;
+      }
+  
+      .percentage {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+  
+        &.positive {
+          color: green;
+        }
+        &.negative {
+          color: red;
+        }
+      }
+  
+      .icon {
+        font-size: 18px;
+        padding: 5px;
+        border-radius: 5px;
+        align-self: flex-end;
+      }
+    }
+  }
+  .textBelowCard{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Montserrat',sans-serif;
+    margin-top: 5px;
+  }
+  
+
+  /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .widget {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .NameAndPos {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .username {
+    font-size: 18px;
+  }
+
+  .position {
+    font-size: 14px;
+  }
+
+  .overCard {
+    margin-right: 10px;
+  }
+
+  .NumofTimes {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .number {
+    font-size: 28px;
+  }
+
+  .times {
+    font-size: 18px;
+  }
+
+  .textBelowCard {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .widget {
+    flex-direction: row;
+    height: 100px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  .NameAndPos {
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .username {
+    font-size: 24px;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+
+  .overCard {
+    margin-right: 20px;
+  }
+
+  .NumofTimes {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  .number {
+    font-size: 34px;
+  }
+
+  .times {
+    font-size: 24px;
+  }
+
+  .textBelowCard {
+    font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .widget {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .NameAndPos {
+    margin-top: 0;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .username {
+    font-size: 24px;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+
+  .overCard {
+    margin-right: 20px;
+  }
+
+  .NumofTimes {
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  .number {
+    font-size: 34px;
+  }
+
+  .times {
+    font-size: 24px;
+  }
+
+  .textBelowCard {
+    font-size: 14px;
+  }
+}

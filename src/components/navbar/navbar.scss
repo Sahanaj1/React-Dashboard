@@ -1,0 +1,110 @@
+.navbar {
+  height: 80px;
+  border-bottom: 0.5px solid rgb(231, 228, 228);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  width: 100%;
+
+  .wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .HamBurgerDiv {
+      display: none;
+    }
+    .CenterDivs {
+      display: flex;
+      width: 100px;
+      align-items: center;
+      margin-left: -450px;
+    }
+    .unit {
+      height: 40px;
+      width: 150px;
+      margin-top: -35px;
+    }
+    .projectSite {
+      height: 40px;
+      width: 150px;
+      margin-top: -35px;
+    }
+    .calendar {
+      height: 40px;
+      width: 150px;
+      margin-top: -17px;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      border: 0.5px solid lightgray;
+      background-color: #e3ebf7;
+      padding: 3px;
+      width: 358px;
+      border-radius: 8px;
+      height: 50px;
+      justify-content: space-between;
+
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #1f64cc;
+        color: #1f64cc;
+        margin-right: 20px;
+        .icon {
+          font-size: 20px;
+        }
+      }
+      .item2 {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        height: 80px;
+        width: 200px;
+        justify-content: space-evenly;
+        background-color: #e3ebf7;
+
+        .icon {
+          font-size: 20px;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .CenterDivs {
+    display: none !important;
+  }
+  .HamBurgerDiv {
+    display: block;
+  }
+}

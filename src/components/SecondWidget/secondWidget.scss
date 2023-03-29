@@ -1,0 +1,197 @@
+.SecondWidgetContainer {
+    display: flex;
+    width: 53%;
+    height: 190px;
+    position: absolute;
+    margin-top: -15rem;
+    border: 0.2px solid #D9D9D9;
+    margin-left: 1rem;
+    align-items: center;
+    border-radius: 8px;
+    .firstWidget {
+      width: 27%;
+      border-right: 1px solid gray;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      .progressBar1 {
+        margin-left: 20px;
+      }
+      .OperationalDiv1 {
+        margin-right: 30px;
+      }
+    }
+  
+    .operational {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .electrical {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .mechanical {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .hotWork {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .workAtHeight {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .confinedText {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .createdText {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .isolatedText {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .WipText {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 4px;
+    }
+    .operationalBox {
+      width: 20px;
+      height: 20px;
+      background-color: #bb3b8a;
+      border-radius:4px;
+    }
+    .electricalBox {
+      width: 20px;
+      height: 20px;
+      background-color: #9a277d;
+      border-radius:4px;
+    }
+    .mechanicalBox {
+      width: 20px;
+      height: 20px;
+      background-color: #781c74;
+      border-radius:4px;
+    }
+    .hotWorkBox {
+      width: 20px;
+      height: 20px;
+      background-color: #bb3b8a;
+      border-radius:4px;
+    }
+    .workAtHeightBox {
+      width: 20px;
+      height: 20px;
+      background-color: #d55a9a;
+      border-radius:4px;
+    }
+    .confinedBox {
+      width: 20px;
+      height: 20px;
+      background-color: #e57ca5;
+      border-radius:4px;
+    }
+    .createdBox {
+      width: 20px;
+      height: 20px;
+      background-color: #5256b8;
+      border-radius:4px;
+    }
+    .isolatedBox {
+      width: 20px;
+      height: 20px;
+      background-color: #787ac4;
+      border-radius:4px;
+    }
+    .WipBox {
+      width: 20px;
+      height: 20px;
+      background-color: #a8aad6;
+      border-radius:4px;
+    }
+    .operationalText {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .secondWidget {
+      width: 38%;
+      border-right: 1px solid gray;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      .progressBar2 {
+        margin-left: 20px;
+      }
+      .OperationalDiv2 {
+        margin-right: 40px;
+      }
+    }
+    .thirdWidget {
+      width: 33%;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin: auto;
+      .progressBar3 {
+        margin-left: 20px;
+      }
+      .OperationalDiv3 {
+        margin-right: 30px;
+      }
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .SecondWidgetContainer {
+      display: flex;
+      flex-direction: column;
+      width: 53%;
+      height: auto;
+      position: absolute;
+      margin-top: -15rem;
+      border: 0.5px solid gray;
+      margin-left: 1rem;
+      align-items: center;
+      border-radius: 8px;
+    }
+    .SecondWidgetContainer {
+      width: 90%;
+      height: auto;
+      margin-top: 0;
+      position: relative;
+    }
+  
+    .firstWidget,
+    .secondWidget,
+    .thirdWidget {
+      width: 100%;
+      border-right: none;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
